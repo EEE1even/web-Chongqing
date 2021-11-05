@@ -1,0 +1,986 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>重 庆</title>
+ <link rel="stylesheet" href="https://unpkg.com/animate.css@3.5.2/animate.min.css">
+ <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+ <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.js"></script>
+ <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.0/js/bootstrap.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<style type="text/css">
+
+	.mr-out{
+		margin: 5px auto;
+		/* border: 1px solid red; */
+		width: 2120px;
+		height: 1100px;
+		overflow: hidden;
+		position: absolute;
+	} 
+	img{
+		width:2120px;
+		height: 1100px;
+		float: left;
+	}
+	.mr-in{
+		width: 2120px;
+		height: 1100px;
+		/* animation: banner 50s linear infinite; */
+	}
+	#nav{
+		width: 2120px;
+		height: 70px;
+		font-family: "alex-brush";
+		background-color:rgba(0,0,0,0.8) ;
+		position: fixed;
+		z-index: 1000000;
+		top: -5px;
+	}
+	#nav img{
+		width: 80px;
+		height: 80px;
+		position: relative;
+		left: 350px;
+		top: -10px;
+	}
+	
+	#bian{
+		width: 100px;
+		height: 500px;
+		background-color:black;
+	}
+	#xuanxiang{
+		background-color:rgba(0,0,0,0);
+		position: relative;
+		top: -50px;
+		left: 1850px;
+		z-index: 10555555555;
+	}
+	
+	#logo{
+		position: relative;
+		left: 800px;
+		top: -2430px;
+	}
+	#logo img{
+		width: 250px;
+		height: 250px;
+	}
+
+	.zuo button{
+		display: block;
+		width: 70px;
+		height: 70px;;
+		font-size: 50px;
+		line-height: 52px;
+		text-align: center;
+		color: white;
+		background-color: rgba(144,144,144,0.3);
+		position: relative;
+		top: -650px;
+		left: 20px;
+		float: left;
+	}
+	.you button {
+		display: block;
+		width: 70px;
+		height: 70px;;
+		font-size: 50px;
+		line-height: 52px;
+		text-align: center;
+		color: white;
+		background-color: rgba(144,144,144,0.3);
+		position: relative;
+		top: -620px;
+		left: 1940px;
+		z-index: 9999;
+		/* float: left; */
+	}
+	.daohang{
+		border: #000000;
+		width: 2120px;
+		height: 450px;
+		position: relative;
+		top: 1108px;
+		float: left;
+		background-color: #BFC7D3;
+		
+	}
+	.daohang a{
+		display: block;
+		width: 150px;
+		height: 38px;
+		font-size: 50px;
+		color: black;
+		line-height: 30px;
+		text-align: center;
+		/* font-weight: bold; */
+		text-decoration: none;
+		margin: 170px 65px;
+		text-align: center;
+		font-size: 25px;
+	}
+	.daohang a:hover{
+		color:white;
+	}
+    .daohang li{
+			list-style: none;	
+	}
+	#kuai1{
+		width: 300px;
+		height: 300px;
+		border: rgba(255,255,255,0.4) 1px solid;
+		margin: 80px 10px 10px 300px;
+		position: relative;
+		left: 100px;
+		color: black;
+		font-size: 100px;
+		
+		/* top: -386px; */
+	}
+	#kuai1 i{
+		position: relative;
+		left: 100px;
+		top:  70px;
+	}
+	#kuai1 li{
+		position: relative;
+		left: 10px;
+		top:  -60px;
+	}
+	
+	#kuai2{
+		width: 300px;
+		height: 300px;
+		border: rgba(255,255,255,0.4) 1px solid;
+		margin: 80px 10px 10px 300px;
+		position: relative;
+		left: 430px;
+		top: -386px;
+		font-size: 100px;
+	}
+	#kuai2 i{
+		position: relative;
+		left: 100px;
+		top:  70px;
+	}
+	#kuai2 li{
+		position: relative;
+		left: 15px;
+		top:  -60px;
+	}
+	#kuai3{
+		width: 300px;
+		height: 300px;
+		border: rgba(255,255,255,0.4) 1px solid;
+		margin: 80px 10px 10px 300px;
+		position: relative;
+		left: 762px;
+		top: -772px;
+		font-size: 100px;
+	}
+	#kuai3 i{
+		position: relative;
+		left: 100px;
+		top:  70px;
+	}
+	#kuai3 li{
+		position: relative;
+		left: 10px;
+		top: -60px;
+	}
+	#kuai4{
+		width: 300px;
+		height: 300px;
+		border: rgba(255,255,255,0.4) 1px solid;
+		margin: 80px 10px 10px 300px;
+		position: relative;
+		left: 1095px;
+		top: -1158px;
+		font-size: 100px;
+	}
+	#kuai4 i{
+		position: relative;
+		left: 100px;
+		top:  70px;
+	}
+	#kuai4 li{
+		position: relative;
+		left: 15px;
+		top:  -60px;
+	}
+	#jieshao{
+		/* background-image:  url(image/019b94569de47f32f875520f359690.jpg@900w_1l_2o_100sh.jpg) ; */
+		background: cover;
+		opacity: 0.6;
+		border: #000000;
+		width: 2120px;
+		height: 1000px;
+		position: relative;
+		top: 1108px;
+		float: left;
+		background-color: #BFC7D3;
+		
+		
+	}
+	#jieshaoblock{
+		background-color: #009DD9;
+		font-family:宋体;
+		width: 1500px;		
+		height: 700px;
+		position: relative;
+		top: 300px;
+		left: 300px;
+		float: left;
+		opacity: 0.7;
+		text-align: center;
+		
+	}
+	#jieshaoblock p{
+		font-size: 40px;
+		color: white;
+		margin: 0 70px;
+	}
+	#jieshaoblock b{
+		font-size: 60px;
+		color: white;
+		
+	}
+	#jieshaoblock h1{
+		text-align: 20px;
+		color: white;
+	}
+	#wenzijieshao{
+		margin: 45px;
+	}
+    .dibu{
+		background-color:lightgray;s
+		width:2120px;		
+		height: 700px;
+		position: relative;
+		top: 508px;
+		left: 0px;
+		float: left;
+		text-align: center;
+	}
+	#dibuleft{
+		width: 1140px;
+		height: 700px;
+		overflow: hidden;
+	}
+	#tupian img{
+		width: 980px;
+		height: 700px;
+		position: relative;
+		left: 1140px;
+		top: -700px;
+		
+	}
+	#dibuleft b{
+		text-align: center;
+		font-size:45px ;
+		color: white;
+		position: relative;
+		left: 0px;
+		top: 150px;
+	}
+	#dibuleft p{
+		width: 500px;
+		text-align:left;
+		font-size: 20px ;
+		line-height: 40px;
+		color: white;
+		margin: 130px;
+		position: relative;
+		left: 280px;
+		top: 100px;
+	}
+	#more{
+		width: 200px;
+		height: 50px;
+		/* background-color: #000000; */
+		border: white 1px solid;
+		position: relative;
+		top: -220px;
+		left: 420px;
+	}
+	#more a{
+		position: relative;
+		top: -685px;
+		left: 0px;
+		text-decoration: none;
+		color: white;
+		display: block;
+	}
+	#more a:hover{
+		
+	}
+
+	footer{
+		width: 2120px;
+		height: 500px;
+		background-color: rgba(0,0,0,0.8);
+		font-size: 23px;
+		position: relative;
+		top: 5300px;
+	}
+
+	#daohang2{
+		width: 753px;
+		height: 50px;
+		margin-top:20px;
+		clear: both;
+		text-align: center;
+		
+		position: relative;
+		left: 100px;
+		top:-2700px;
+		
+	}
+	#daohang2 nav{
+		width: 1200px;
+		margin: 0 auto;
+		height: 45px;
+		text-align: center;
+	}
+	#footer1 a:hover{
+		color: orange;
+		border-bottom: 1px white solid ;
+	}
+	#footer1 a{
+		display: block;
+		width: 150px;
+		height: 38px;
+		font-size: 20px;
+		color: white;
+		line-height: 30px;
+		text-align: center;
+		/* font-weight: bold; */
+		text-decoration: none;
+	}
+	#footer1{
+		margin-top: 10px;
+		
+	}
+	#footer1 li{
+		width: 150px;
+		height: 30px;
+		margin: 10px auto;
+		/* border-right: 1px solid #999999; */
+		float:left;
+		position: relative;
+		left: 110px;
+		top: -67px;
+		list-style: none;
+	}
+	#wenzif{
+		width: 500px;
+		height: 200px;
+		color: white;
+		
+		position: relative;
+		top: -2700px;
+		left: 300px;
+	}
+	#wenzif b{
+		font-size: 50px;
+	}
+	.container {
+		height: 70px;    
+		width: 800px;    
+		margin: 100px auto 0 auto;
+		position: relative;
+		left: 830px;
+		top: -110px;
+		}
+		.parent {    position: relative;}
+		.search {    width: 200px;    height: 33px;   
+		 border-radius: 18px;    outline: none;    border: 1px solid #ccc;   
+		  padding-left: 20px;    position: absolute;}
+		  .btn {    height: 35px;    width: 35px;    position: absolute;        cursor: pointer;}
+	
+	@font-face {
+	font-family: SketchRockwell; 
+	src: url(image/王羲之书法字体.ttf); 
+	} 
+	@font-face {
+	font-family: 八大; 
+	src: url(image/八大山人字体.ttf); 
+	} 
+	@font-face {
+	font-family: 欧阳; 
+	src: url(image/欧阳询体.ttf); 
+	} 
+	.daohang { 
+	font-family: 欧阳; 
+	font-size: 10em; 
+	} 
+	#wenzijieshao p{
+		font-family: 欧阳;
+		
+		
+	}
+	#subtitle{
+		display:block;
+		font-family: 欧阳;
+		font-size: 10em;
+		color: white;
+		position: relative;
+		top: 450px;
+		left: -650px;
+		z-index:1;
+	}
+	#subtitle1, #subtitle2, #subtitle3, #subtitle4{
+		display: none;
+		font-family: 欧阳;
+		font-size: 10em;
+		color: white;
+		position: relative;
+		top: 450px;
+		left: -650px;
+		animation: sub 2s linear /* infinite */;
+		z-index:2;
+	}
+	#subtitle2{
+		font-size: 10em;
+		}
+		
+	#jieshaoblock{
+		/* display: none; */
+		background-color: #000000;
+		/* animation: wen 10s infinite linear; */
+	}	
+	#wenzijieshao{
+		display: none;
+		animation: sub 0.2s linear ;
+	}
+	/* .dong */{
+		/* display: none; */
+		animation-duration: 5s;
+		animation-iteration-count: 5;
+	}
+	.buy{
+		animation-duration: 2s;
+		animation-delay:0.1s;
+	}
+	.choose{
+		animation-duration: 2s;
+	}
+	.login{
+		animation-duration: 2s;
+		animation-delay:0.1s;
+	}
+	.show{
+		animation-duration: 2s;
+	}
+	.box{
+		animation-duration: 3s;
+		animation-delay:0.1s;
+	}
+	#workplace{
+		height:2000px;
+		width :2200px;
+		position: relative;
+		top: 100px;
+		display:none;
+	}
+	#workplace img{
+		width:600px;
+		height:auto;
+	}
+	#chi1 {
+		font-size:40px;
+		position:relative;
+		left:420px;
+		top:280px;
+	}
+	#eng1{
+		font-size:25px;
+		position:relative;
+		left:420px;
+		top:270px;
+	}
+	#chi2 {
+		font-size:40px;
+		position:relative;
+		left:-770px;
+		top:280px;
+	}
+	#eng2{
+		font-size:25px;
+		position:relative;
+		left:-770px;
+		top:270px;
+	}
+	#chi3 {
+		font-size:40px;
+		position:relative;
+		left:-550px;
+		top:270px;
+	}
+	#eng3{
+		font-size:25px;
+		position:relative;
+		left:-50px;
+		top:270px;
+	}
+	#chi4{
+		font-size:40px;
+		position:relative;
+		left:-1250px;
+		top:270px;
+	}
+	#eng4{
+		font-size:25px;
+		position:relative;
+		left:-1250px;
+		top:270px;
+	}
+	.l1{
+		position:relative;
+		left:-550px;
+		top:-220px;
+		animation-duration: 1s;
+		animation-delay:0.1s;
+	}
+	.r1{
+		position:relative;
+		left:-400px;
+		top:80px;
+		animation-duration: 1s;
+		animation-delay:0.2s;
+	}
+	.l2{
+		position:relative;
+		left:420px;
+		animation-duration: 1.5s;
+		animation-delay:0.4s;
+	}
+	.r2{
+		position:relative;
+		left:580px;
+		top:370px;
+		animation-duration: 1.5s;
+		animation-delay:0.4s;
+	}
+	
+
+	@keyframes sub {
+			0%{
+				opacity: 0.2;
+			}
+			25%{
+				margin-left: 0.4;
+			}
+			50%{
+				margin-left: 0.6;
+			}
+			75%{
+				margin-left: 0.8;
+			}
+			100%{
+				margin-left: 1.0;
+			}
+	
+	@keyframes wen {
+			0%{
+				opacity: 0.1;
+			}
+		
+			
+		
+	
+</style>
+
+</head>
+<body>
+
+<div class="mr-out" >
+	<div id="nav">
+		<nav>
+		<a href="主页.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: 23px; left: 450px;">主页</a>
+		<a href="重庆美食.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: 23px; left: 580px;">重庆美食</a>
+		<a href="重庆景点.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: 23px; left: 710px;">重庆旅游</a>
+		<a href="历史名人.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top:  23px; left: 840px;">名人动态</a>
+		<a href="网上购物/网络购物.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: 23px; left: 970px;">网上订购</a>
+		<a href="" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: 23px; left: 1240px;">
+		<i class="fa fa-search" aria-hidden="true"></i>	
+		</a>
+		<div class="container">    
+		<form action="" class="parent">        
+		<input type="text" class="search" placeholder="搜索">          
+		</form>
+		</div>
+		
+		<a href="重庆美食.html" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: -177px; left: 1770px;" ><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+		<p onclick="jiemian()" style="color: white; text-decoration: none; font-size:24px;  position: relative; top: -205px; left: 1830px;">
+			<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+			
+			</p>
+			<div id="login" style="width: 500px;height: 300px; background-color: white;position: relative; top: -232px; left: 1400px;display: none;">
+				<img src="image/u=2553242400,2080369090&fm=11&gp=0.jpg" / style="width: 15%;height: auto; position: relative; left: 20px; top: 10px;">
+				<p style="position: relative; left: 23px; top: 15px;">锦书致山泉</p>
+				<p style="font-size: 8px; position: relative; left: 23px; top: 8px; color: red;">超级会员 <span style="color: gold;">SVIP</span></p>
+				<p style="position: relative; left: 380px; top: -110px;"> <a style="text-decoration: none;">账号管理</a> |<a style="text-decoration: none;">退出</a></p>
+				<p style="font-size: 20px; position: relative; left: 23px; top: 8px;"> <i class="fa fa-shopping-cart" aria-hidden="true"></i> 购物车 : 2 件</p>
+				<div style="background-color: rgba(0,0,0,0); width: 300px;height: 20px; border: 1px #000000 solid;position: relative; left: 140px; top: -120px;">
+					<p style="position: relative;left: 130px;">经验值：100/1000</p>
+					<div style="background-color: orange; width: 100px;height: 18px;position: relative;top: -30px; "></div>
+				</div>
+				<p style="font-size: 20px; position: relative; left: 200px; top: -52px;"> <i class="fa fa-star" aria-hidden="true"></i> 收藏夹 : 148 件</p>
+				<button style="background-color: lightsalmon ;width: 450px; position: relative; left: 20px; top: -5px;">查看你的专属权益</button>	
+			</div>	
+			
+			<script type="text/javascript">
+				var time=0;
+				function jiemian(){
+					var z=document.getElementById("login");
+					var a=document.getElementById("xuan");
+					var m=document.getElementById("n2");
+					console.log(time);
+					time++; 
+					if(time%2==1){
+					z.style.display="block";
+					m.style.top="-300px"
+					}
+					else{
+						
+						z.style.display="none";
+						m.style.top="0px"
+						
+					}
+				}
+			</script>
+			<div id="n2" style="position: relative;">
+		<a href="draft2.html" id="xuan" style="color: white; text-decoration: none; font-size:20px;  position: relative; top: -250px; left: 1880px;">
+			<select class="selectpicker" data-live-search="true"  onchange="selectOnchang(this)">
+			  <option data-tokens="ketchup mustard" >中文</option>
+			  <option data-tokens="mustard" value="主页英语.html">English</option>
+			  <option data-tokens="frosting">日本語</option>
+			</select>
+			<script type="text/javascript" >
+				function selectOnchang(obj){ 
+				//获取被选中的option标签选项 
+				var value = obj.options[obj.selectedIndex].value;
+				if (value !=""){
+					open(value,"");
+					obj.selectedIndex=0;
+					obj.blur();
+					window.close();
+				}
+				}
+			</script>
+		</a>
+		</div>
+		<p style="color: white; text-decoration: none; font-size:20px;  position: relative; top: -50px; left: 1300px;>语言</p>
+		
+		
+		
+		</nav>
+		
+	</div>
+	
+	<div id="bian">
+		
+		</div>
+	<div class="mr-in" id="in">
+		
+	<img src="image/0109085bdbd4f6a80121ab5d4f2613.jpg@3000w_1l_0o_100sh.jpg" id="a" alt=""/>
+	<img src="image/pexels-photo-2127007.jpg" id="b" alt=""/>
+	<img src="image/pexels-photo-273222.jpg"  id="c" alt=""/>
+	<img src="image/apartment-apple-building-265125.jpg" id="d" alt=""/>
+	
+	</div>
+	
+	
+	
+	
+	
+	<div class="zuo">
+	<button onclick="pre()" alt="<" > < </button>
+	</div>
+	<div class="you">
+	<button onclick="pre()" alt="<" > > </button>
+	</div>
+	<div id="subtitle" style="position: relative; top: 530px;">
+		<p>山城之旅，美丽重庆</p>
+	</div>
+	  
+	<script type="text/javascript">
+		var time=0;
+		function pre(){
+			var t=document.getElementById("in");
+			// alert(t[0]);
+			var s=document.getElementById("subtitle1")
+			var m=document.getElementById("subtitle2")
+			var l=document.getElementById("subtitle3")
+			var o=document.getElementById("subtitle4")
+			var h=document.getElementById("subtitle")
+			 console.log(time);
+			 time++; 
+		if(time%4==1){
+			t.style.marginLeft="-2120px";
+			s.style.display="block";
+			m.style.display="none";
+			l.style.display="none";
+			o.style.display="none";
+			h.style.display="none";
+		}
+		if(time%4==2){
+			t.style.marginLeft="-4240px";
+			s.style.display="none";
+			m.style.display="block";
+			l.style.display="none";
+			o.style.display="none";
+		}
+		if(time%4==3){
+			t.style.marginLeft="-6360px";
+			s.style.display="none";
+			m.style.display="none";
+			l.style.display="block";
+			o.style.display="none";
+		}
+		if(time%4==0){
+			t.style.marginLeft="0";
+			s.style.display="none";
+			m.style.display="none";
+			l.style.display="none";
+			o.style.display="block";
+		}
+		// alert(time);
+		// alert(t.style.marginLeft);
+		}
+		function next(){
+			var t=document.getElementById("in");
+			// alert(t[0]);
+			
+			 console.log(time);
+			 time++; 
+		if(time%4==1){
+			t.style.marginLeft-="2120px";
+			alert(t.style.marginLeft);			
+		}
+		if(time%4==2){
+			t.style.marginLeft="4240px";
+		}
+		if(time%4==3){
+			t.style.marginLeft="6360px";
+			
+		}
+		if(time%4==0){
+			t.style.marginLeft="0";
+		
+		}
+		// alert(time);
+		// alert(t.style.marginLeft);
+		}
+		
+		
+		
+	
+	</script>
+	
+	
+	
+	
+<div >
+			
+				
+				<ul id="nav1">
+					
+				</ul>
+				<div id="navright" >
+					
+				</div>
+			
+</div>
+<div id="logo" style="left: 1160px;">
+	
+	<div id="subtitle" style="position: relative; top: 530px;">
+		<p class="box animated bounceIn">山城之旅，美丽重庆</p>
+	</div>
+	<div id="subtitle1" style="position: relative; top: 530px;">
+		<p class="box animated bounceIn">山城之旅，美丽重庆</p>
+	</div>
+	<div id="subtitle2" style="position: relative; top: 530px;">
+		<p class="box animated bounceIn">新重庆，心旅</p>
+	</div>
+	<div id="subtitle3" style="position: relative; top: 530px;">
+		<p class="box animated bounceIn">山城之旅，美丽重庆</p>
+	</div>
+	<div id="subtitle4" style="position: relative; top: 530px;">
+		<p class="box animated bounceIn">山城之旅，美丽重庆</p>
+	</div>
+</div>
+
+</div>
+
+
+<div class="daohang" >
+	<div id="daohang1">
+	<div id="kuai1" class="buy animated  fadeInLeft">
+		
+		<i class="fa fa-folder-o" aria-hidden="true"></i>
+		<li><a href="网上购物/网络购物.html">网上订购</a></li>
+	</div>
+	<div id="kuai2" class="choose animated  fadeInLeft">
+		<i class="fa fa-laptop" aria-hidden="true"></i>
+		<li><a href="重庆美食.html">重庆美食</a></li>
+	</div>
+	<div id="kuai3" class="login animated  fadeInRight">
+		<i class="fa fa-user-o" aria-hidden="true"></i>
+		<li><a href="重庆景点.html">重庆旅游</a></li>
+	</div>
+	<div id="kuai4" class="show animated  fadeInRight">
+		<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+		<li><a href="历史名人.html">名人动态</a></li>
+	</div>
+	</div>
+</div>
+
+<div id="jieshao">
+	<img src="image/019b94569de47f32f875520f359690.jpg@900w_1l_2o_100sh.jpg" />
+</div>
+<div id="jieshaoblock"  >
+	<div id="wenzijieshao" class="ab">
+	<b>重庆简介</b>
+     <h1>INTRODUCTION</h1>
+<p>
+重庆，别称山城，是中华人民共和国省级行政区、直辖市、国家中心城市、超大城市，国务院批复确定的中国重要的中心城市之一，长江上游地区经济中心，国家重要的现代制造业基地，西南地区综合交通枢纽。雾都、赛博朋克、3D魔幻、火锅之都、桥梁之都。重庆堪称中国新获标签最多的城市，近年来旅游人次连续位居前榜。此外还有火锅之都、桥梁之都等各种标签，堪称中国新获标签最多的城市。众多的标签吸引了无数游客奔向重庆，旅游人次连续三年位居全国第一。
+</p>
+</div>
+ 
+</div>
+
+
+
+
+<div class="dibu">
+	<div id="dibuleft">
+		<b class="dong animated bounceInLeft">			
+			重庆旅游理念
+		</b>
+		<p class="dong animated bounceInLeft" id="dong">
+			从最初的“山水城市”到“永远的三峡，世界的重庆”、“新三峡，新重庆，新旅游”再到“激情重庆”，这一过程体现了重庆旅游形象的升华，昭示着重庆旅游形象的内涵和未来方向。
+		</p>
+	</div>
+
+	
+	<div id="tupian">
+		<img src="image/360截图-128149015.jpg" />
+	
+	</div>
+	<div id="more">
+		<a href="#">了解更多</a>
+	</div>
+	<div id="workplace" style="">
+		<div class="l1 animated  fadeInLeft">
+		<p id="chi1">业态繁荣—繁荣的水岸经济岸</p>
+		<p id="eng1" >Customized service for every customer</p>
+		<img src="image/pexels-photo-273222.jpg"/>
+		</div>
+		
+		<div class="r1 animated  fadeInRight">
+			<p id="chi2">景观宜人—美丽的滨水景观带</p>
+			<p id="eng2" >Precise service, special service and special service</p>
+		<img src="image/019b94569de47f32f875520f359690.jpg@900w_1l_2o_100sh.jpg"/>
+		</div>
+		<div class="l2 animated  fadeInLeft">
+			<p id="chi3">文化厚重—特色的文化体验带</p>
+			<p id="eng3">Customized service for every customer</p>
+		<img src="image/pexels-photo-301703.jpeg"/>
+		</div>
+		
+		<div class="r2 animated  fadeInRight">
+			<p id="chi4">交通便捷—城市的水陆交通带</p>
+			<p id="eng4" >Customized service for every customer</p>
+		<img src="image/pexels-photo-261628.jpeg"/>
+		</div>
+		
+	</div>	
+</div>
+
+	
+<script>
+            var box = document.querySelector("#wenzijieshao");
+			var z= document.getElementById("dong");
+			var c= document.getElementById("daohang1");
+			var e= document.getElementById("jieshaoblock");
+			var f= document.getElementById("workplace");
+            //用js检测鼠标滚轮距离顶部位置来给div添加动画
+            window.onscroll = function() {
+                //检测鼠标滚轮距离顶部位置
+                var top = document.documentElement.scrollTop || document.body.scrollTop;
+                console.log(top);
+                //要设置到DIV显示出来时给div添加动画 也可以设置一个数值只要保证div出来给它加动画即可
+                if((top >1400)&&(top<2200)) {　　　　　　　　　　　　
+                    // box.style.animation = "wen .2s  linear 2 " //添加动画  
+					box.style.display="block";
+                    // alert(444)　;　　　
+					　
+                }
+				if(top<800||top>2200){
+					
+					box.style.display="none";
+					　
+				}
+				if(top>1600){
+					// alert(z);
+					z.style.display="block";　
+					
+					
+				}
+				if(top<2000){
+					
+					z.style.display="none";
+					// c.style.top="-10000px";
+					// alert(c.style.top);
+				}
+				if((top>250)&&(top<500)){
+					// alert(c);
+					c.style.display="block";
+				}
+				if(top<250){
+					c.style.display="none";
+				}
+				if(top>2450){
+					f.style.display="block";
+				}
+				if(top<2450){
+					f.style.display="none";
+				}
+				
+				
+            }
+        </script>
+
+	
+
+   <footer>
+	   <div id="daohang2">
+	   				<nav>
+	   				<ul id="footer1">
+	   					<li ><a href="主页.html">首页</a></li>
+	   					<li ><a href="重庆美食.html">重美食庆</a></li>
+	   					<li ><a href="重庆景点.html">重庆旅游</a></li>
+	   					<li ><a href="历史名人.html">名人动态</a></li>
+	   					<li class="noright"><a href="网上购物/网络购物.html">网上订购</a></li>
+	   				</ul>
+					</nav>
+
+</div>
+<div id="wenzif">
+<b>邮政编码：400000</b>
+<p >
+	
+	仁者乐山，智者乐水
+	<p>标语：无夜景，不山城</p> 
+</p>
+</div>   
+   </footer>   
+
+</body>
+</html>
